@@ -1,2 +1,9 @@
 touch Dockerfile
 touch docker-compose.yml
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
